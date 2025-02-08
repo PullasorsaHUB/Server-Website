@@ -159,7 +159,7 @@ h1
     height: 40px;
     border: none;
     outline: none;
-    color: #000;
+    color: #fff;
     background: #111;
     cursor: pointer;
     position: relative;
@@ -186,7 +186,7 @@ h1
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #fff
 }
 
 .glow-on-hover:active:after {
