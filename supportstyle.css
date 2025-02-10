@@ -335,7 +335,8 @@ h1
 .main__container
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
@@ -352,6 +353,7 @@ h1
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%,#ffb199
     100%);
+    margin: 0;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -365,6 +367,7 @@ h1
     background-color: #ff8177;
     background-image: linear-gradient(to top, #b721ff 0%,#21d4fd
     100%);
+    margin: 0;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -631,4 +634,76 @@ h1
         padding: 10px;
         width: 100%;
     }    
+}
+label
+{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: green;
+    font-weight: 600;
+}
+input,textarea
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.feedback {
+    grid-column: span 2; /* Spans both columns */
+    align-self: start; /* Positions it at the top */
+    justify-self: center; /* Centers it within the grid */
+    margin-top: -20px; /* Moves it slightly higher */
+    text-align: center; /* Centers text inside */
+    width: 600px; /* Increased width */
+    padding: 25px; /* Adds more padding for spacing */
+    min-height: 250px; /* Ensures a larger background */
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.feedback textarea {
+    width: 80%;
+    height: 100px;
+    font-size: 12px;
+}
+
+.feedback h1 {
+    font-size: 4rem;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 0 auto; /* Centers text block */
+}
+
+.feedback p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.feedback button
+{
+    width: 100%; /* Makes it stretch across the box */
+    padding: 12px 20px; /* Adds comfortable spacing */
+    font-size: 16px; /* Adjusts text size */
+    font-weight: bold;
+    color: white; /* Text color */
+    border: none; /* Removes default border */
+    border-radius: 8px; /* Soft rounded corners */
+    background: linear-gradient(to right, #ff0844, #ffb199); /* Gradient to match */
+    cursor: pointer; /* Changes cursor on hover */
+    transition: all 0.3s ease-in-out; /* Smooth effect */
+}
+.feedback button:hover {
+    background: linear-gradient(to right, #b721ff, #21d4fd); /* Hover effect */
+    transform: scale(1.05); /* Slight zoom on hover */
 }
