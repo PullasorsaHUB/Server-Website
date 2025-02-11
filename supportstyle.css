@@ -665,10 +665,20 @@ input,textarea
     border-radius: 10px; /* Rounded corners */
 }
 
-.feedback textarea {
-    width: 80%;
-    height: 100px;
-    font-size: 12px;
+.feedback textarea 
+{
+    width: 100%;
+    height: 200px;
+    font-size: 1.2rem;
+    padding: 8px;
+    margin: 1rem auto;
+    display: block;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #131313;
+    color: #fff;
+    vertical-align: top;
 }
 
 .feedback h1 {
