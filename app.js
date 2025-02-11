@@ -57,22 +57,3 @@ document.getElementById("feedbackform").addEventListener("submit", function(even
         }
     }).catch(error => console.error("Error:", error));
 });
-
-document.getElementById("feedbackformdiscord").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-
-    const message = document.getElementById("msg").value;
-
-    fetch("https://discord.com/api/webhooks/1338795167922262077/6e4G5oSuGZSTYKm9eYVCnF5ZNCm444OM_9UIK0qxq82kDKv1kCYzSYkFPvWmnMfKYY62", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ content: `📩 New Feedback To Discord Bot: ${message}` })
-    }).then(response => {
-        if (response.ok) {
-            alert("Feedback sent to Discord!");
-
-            // Clear the textarea after successful submission
-            document.getElementById("msg").value = "";
-        }
-    }).catch(error => console.error("Error:", error));
-});
