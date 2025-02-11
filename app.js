@@ -47,7 +47,7 @@ document.getElementById("feedbackform").addEventListener("submit", function(even
     fetch("https://discord.com/api/webhooks/1338795167922262077/6e4G5oSuGZSTYKm9eYVCnF5ZNCm444OM_9UIK0qxq82kDKv1kCYzSYkFPvWmnMfKYY62", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ content: `📩 New Feedback: ${message}` })
+        body: JSON.stringify({ content: `📩 New Feedback To Website: ${message}` })
     }).then(response => {
         if (response.ok) {
             alert("Feedback sent to Discord!");
