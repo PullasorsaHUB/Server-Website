@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const message = document.getElementById("msg").value;
         
         // Send feedback to the server (or Discord in your case)
-        fetch("", { // Replace with your server URL
+        fetch("https://pullasorsahub.github.io/Server-Website/support.html", { // Replace with your server URL
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message })
